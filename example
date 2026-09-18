@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<div class="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div class="w-full max-w-xl bg-white rounded-xl shadow-md p-6 space-y-4 text-gray-800">
+    
+    <div class="text-left">
+      <h1 class="text-2xl font-bold text-gray-900 text-center">Computer Lab Reservation Form</h1>
+      <p class="text-xs text-gray-500 mt-1 text-center">Please fill in the form below to book a computer lab for your class or activity.</p>
+    </div>
+
+    <form class="space-y-4 text-sm font-medium">
+      
+      <div>
+        <label class="block mb-1 text-gray-700">Borrower's Name</label>
+        <input 
+          type="text" 
+          placeholder="Enter your full name" 
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg placeholder-gray-400 text-sm"
+        />
+      </div>
+
+      <div>
+        <label class="block mb-1 text-gray-700">Status</label>
+        <div class="flex items-center space-x-4 text-xs font-normal text-gray-700">
+          <label class="inline-flex items-center space-x-1.5 cursor-pointer">
+            <input type="radio" name="status" checked class="w-4 h-4 border-gray-300" /> Teacher
+          </label>
+          <label class="inline-flex items-center space-x-1.5 cursor-pointer">
+            <input type="radio" name="status" class="w-4 h-4 border-gray-300" /> Student
+          </label>
+          <label class="inline-flex items-center space-x-1.5 cursor-pointer">
+            <input type="radio" name="status" class="w-4 h-4 border-gray-300" /> Organization
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label class="block mb-1 text-gray-700">Purpose</label>
+        <input 
+          type="text" 
+          placeholder="Practicum, Practice, OSIS Meeting, etc." 
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg placeholder-gray-400 text-sm"
+        />
+      </div>
+
+      <div>
+        <label class="block mb-1 text-gray-700">Borrowed Lab</label>
+        <select class="w-full px-3 py-2 border border-gray-300 rounded-lg bg-white text-sm text-gray-700">
+          <option>Lab 1 (Software)</option>
+          <option>Lab 2 (Hardware)</option>
+          <option>Lab 3 (Network)</option>
+        </select>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div>
+          <label class="block mb-1 text-gray-700">Date of Use</label>
+          <input 
+            type="date" 
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg text-gray-500 text-sm"
+          />
+        </div>
+        <div>
+          <label class="block mb-1 text-gray-700">Start Time</label>
+          <input 
+            type="time" 
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg text-gray-500 text-sm"
+          />
+        </div>
+        <div>
+          <label class="block mb-1 text-gray-700">End Time</label>
+          <input 
+            type="time" 
+            class="w-full px-3 py-2 border border-gray-300 rounded-lg text-gray-500 text-sm"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label class="block mb-1 text-gray-700">Number of Participants</label>
+        <input 
+          type="number" 
+          placeholder="e.g., 30" 
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg placeholder-gray-400 text-sm"
+        />
+      </div>
+
+      <div>
+        <label class="block mb-1 text-gray-700">Special Requirements</label>
+        <textarea 
+          rows="3" 
+          placeholder="Need internet access, need a projector, etc." 
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg placeholder-gray-400 text-sm resize-y"
+        ></textarea>
+      </div>
+
+      <div class="pt-2">
+        <button 
+          type="submit" 
+          class="w-full bg-indigo-700 text-white font-semibold py-2.5 px-4 rounded-lg shadow-sm">
+          Submit Reservation
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+</body>
+</html>
