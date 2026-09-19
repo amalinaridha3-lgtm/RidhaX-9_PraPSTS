@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Lab Reservation</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+
+    <div class="bg-white w-full max-w-2xl p-8 rounded-2xl shadow-lg">
+
+        <h1 class="text-3xl font-bold text-center text-blue-600 mb-2">
+            Computer Lab Reservation
+        </h1>
+
+        <p class="text-center text-gray-500 mb-6">
+            Reserve the school computer lab
+        </p>
+
+        <form class="space-y-5">
+
+            <!-- Borrower's Name -->
+            <div>
+                <label class="block font-semibold mb-2">
+                    Borrower's Name
+                </label>
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                    class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
+                >
+            </div>
+
+            <!-- Status -->
+            <div>
+                <label class="block font-semibold mb-2">
+                    Status
+                </label>
+
+                <div class="flex gap-5">
+                    <label>
+                        <input type="radio" name="status" value="teacher">
+                        Teacher
+                    </label>
+
+                    <label>
+                        <input type="radio" name="status" value="student">
+                        Student
+                    </label>
+
+                    <label>
+                        <input type="radio" name="status" value="organization">
+                        Organization
+                    </label>
+                </div>
+            </div>
+
+            <!-- Purpose -->
+            <div>
+                <label class="block font-semibold mb-2">
+                    Purpose
+                </label>
+                <input
+                    type="text"
+                    placeholder="Practicum, Practice, OSIS Meeting, etc."
+                    class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
+                >
+            </div>
+
+            <!-- Borrowed Lab -->
+            <div>
+                <label class="block font-semibold mb-2">
+                    Borrowed Lab
+                </label>
+
+                <select
+                    class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
+                >
+                    <option value="">Choose a lab</option>
+                    <option value="lab1">Lab 1 (Software)</option>
+                    <option value="lab2">Lab 2 (Hardware)</option>
+                </select>
+            </div>
+
+            <!-- Date -->
+            <div>
+                <label class="block font-semibold mb-2">
+                    Date of Use
+                </label>
+
+                <input
+                    type="date"
+                    class="w-full border rounded-lg px-4 py-2"
+                >
+            </div>
+
+            <!-- Start Time -->
+            <div>
+                <label class="block font-semibold mb-2">
+                    Start Time
+                </label>
+
+                <input
+                    type="time"
+                    class="w-full border rounded-lg px-4 py-2"
+                >
+            </div>
+
+            <!-- End Time -->
+            <div>
+                <label class="block font-semibold mb-2">
+                    End Time
+                </label>
+
+                <input
+                    type="time"
+                    class="w-full border rounded-lg px-4 py-2"
+                >
+            </div>
+
+            <!-- Number of Participants -->
+            <div>
+                <label class="block font-semibold mb-2">
+                    Number of Participants
+                </label>
+
+                <input
+                    type="number"
+                    min="1"
+                    placeholder="Enter number of participants"
+                    class="w-full border rounded-lg px-4 py-2"
+                >
+            </div>
+
+            <!-- Special Requirements -->
+            <div>
+                <label class="block font-semibold mb-2">
+                    Special Requirements
+                </label>
+
+                <textarea
+                    rows="4"
+                    placeholder="Need internet access, need a projector, etc."
+                    class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
+                ></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button
+                type="submit"
+                class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition"
+            >
+                Submit Reservation
+            </button>
+
+        </form>
+    </div>
+
+</body>
+</html>
